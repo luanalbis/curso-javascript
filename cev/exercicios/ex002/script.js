@@ -5,7 +5,7 @@ function calcIdade() {
     var nascimento = Number(document.getElementById('idano').value)
     var idade = ano - nascimento
 
-    if (idade == ano || nascimento > ano){
+    if (nascimento > ano || nascimento < 1900) {
         window.alert('Por favor, insira um ano válido!')
     } else {
         if (idade < 15){
@@ -34,6 +34,7 @@ function calcIdade() {
         document.getElementById('imagem').innerHTML = '<img src="imagens/homem-adulto2.jpg">'
     } else if (idade > 59 && sexo == "masculino"){
         document.getElementById('imagem').innerHTML = '<img src="imagens/homem-idoso.jpg">'
+
     } else if (idade < 15 && sexo == "feminino"){
         document.getElementById('imagem').innerHTML = '<img src="imagens/mulher-criança2.jpg">'  
     } else if (idade < 20 && sexo == "feminino"){
