@@ -14,17 +14,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
  header {
     font-size :2.4vw;
     text-align: center;
-    width: 60vw;
+    width: 65vw;
     max-width: 500px;
     max-height: 700px;
     color: white;
-    background-color: blueviolet;
+    background-color: rgb(102, 19, 180);
     padding: 20px;
     border-radius: 10px 10px 0 0;
 }
@@ -34,11 +33,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60vw;
+    width: 65vw;
     max-height: 700px;
     max-width: 500px;
-    background-color: aqua;
-    font-size: ;
+    background-color: rgb(70, 229, 250);
+    font-size: .8em;
     border-radius: 0 0 10px 10px;
 }
 
@@ -57,7 +56,7 @@ input {
 input#idano {
     width: 28%;
     height: 10%;
-    padding: 5px;
+    padding: 4px;
     text-align: center;
     border: solid 1px rgb(91, 16, 161);
 }
@@ -75,7 +74,7 @@ input#botao {
     height: 50px;
     margin-top: 5% ;
     margin-bottom: 8%;
-    background-color: white;
+    background-color: rgb(243, 242, 242);
     border: 1px solid;
     color: black;
     font-weight: bold;
