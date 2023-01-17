@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            width: 400px;
+            height: 400px;
+            color: white;
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <!--   EVENTOS 
+    
+        mouseenter - mouse dentro da div
+        mousemove - movendo mouse dentro da div
+        mousedown - mouse pressionado constantemente
+        mouseup - momento em que solta o mouse
+        click - click na div
+        mouseout - quando arrastamos o mouse para fora da div
+    
+    -->
+
+    <button id="botao" >BOTAO</button>
+    <div id="area">
+        interaja
+    </div>
+
+    <script>
+        botao.addEventListener('click',clicar)
+        area.addEventListener('mouseenter', entrou)
+        area.addEventListener('mouseout', saiu)
+        function clicar() {
+           if (area.style.display == 'flex'){
+            area.style.display = 'none'
+           }else{
+            area.style.display = 'flex'
+           }
+        }
+
+        function entrou() {
+            area.style.background = 'red'
+        }
+
+        function saiu (){
+            area.style.background = "blue"
+        }
+    </script>
+</body>
+</html>

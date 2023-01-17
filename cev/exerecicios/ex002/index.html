@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <title>Document</title>
+</head>
+<body id="body">
+    <header><h1>Verificador de Idade</h1></header>
+    <main>
+        <div id="dados">
+            <label for="idano">Ano de nascimento</label>
+            <input type="text" name="ano" id="idano" required minlength="4" maxlength="4"> 
+             <br>
+
+            <label>Sexo:</label>
+
+            <input type="radio" name="sexo" id="idmasculino" value="masculino" required>
+            <label for="idmasculino">Masculino</label>
+
+            <input type="radio" name="sexo" id="idfeminino" value ="feminino">
+            <label for="idfeminino">Feminino</label>
+
+            <input id="botao" onclick="calcIdade()" type="button" value="Enviar dados">
+            <div id="texto">
+            </div>
+            <div id="imagem"></div>
+        </div>
+         
+    </main>
+    <footer>  
+
+    </footer>
+    <script src="script.js"></script> 
+
+
+</body>
+</html>
+
+<img src="imagens/" alt="">

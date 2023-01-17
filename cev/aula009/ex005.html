@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <H1>Iniciando estudos no DOM</H1>
+    <h2>Document Objet Model</h2>
+    <ul>
+        <li>window</li>
+        <ul>
+            <li>location</li>
+            <li>document</li>
+            <ul>
+                <li>html</li>
+                <ul>
+                    <li>head</li>
+                    <ul>
+                        <li>meta</li>
+                        <li>title</li>
+                    </ul>
+                    <li>body</li>
+                    <ul>
+                        <li>div</li>
+                        <li>header</li>
+                    </ul>
+                </ul>
+            </ul>
+           
+            <li>history</li>
+        </ul>
+
+    </ul>
+
+    <script>
+        var texto = window.document.getElementsByTagName ('h1')[0]
+        window.document.write(texto.innerHTML)
+    </script>
+    
+</body>
+</html>

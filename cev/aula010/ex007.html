@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+</head>
+<body>
+    <h1>somando números</h1>
+    <input type="number" name="num" id="idnum">
+    <input type="number" name="num2" id="idnum2">
+    <button  onclick="clicou()">Somar</button>
+    <p id="botao"></p>
+
+    <script>
+        botao.addEventListener('click',clicou)
+         function clicou(){
+           var soma = Number(idnum.value) + Number(idnum2.value)
+           document.getElementById('botao').innerText = `A soma entre ${idnum.value} e ${idnum2.value} é igual a ${soma}`
+        }
+
+    </script>
+</body>
+</html>

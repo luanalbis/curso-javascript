@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ALGUMAS FUNCIONALIDADES
+
+        // para números = nome.toFixed(2), o número terá  duas casas decimais 
+
+        // nome.replace('.' , ',') , o número ou string terá seus pontos trocados em virgulas
+
+        // numero.toLocalString('pt-BR', {style: 'currency: 'BRL'})
+
+        var nome = window.prompt('Qual é o seu nome? ')
+        document.write(`Olá ${nome}, seu nome tem ${nome.length} letras</br>`)
+        document.writeln(`Seu nome em maiúsculo é ${nome.toUpperCase()}</br>`)
+        document.writeln(`Seu nome em minúsculo é ${nome.toLowerCase()}`)
+
+    </script>
+</body>
+</html>
