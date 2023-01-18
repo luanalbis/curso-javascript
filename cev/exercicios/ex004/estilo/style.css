@@ -60,9 +60,6 @@ input {
     border: solid 1px rgb(91, 16, 161);
 }
 
-input#idano:focus{
-    outline-color:none;
-}
 
 input#botao {
     margin: auto;
@@ -84,7 +81,7 @@ input#botao:hover {
     transition: background-color .2s;
 }
 
-div #contagem {
+div #tabuada {
     font-weight: bold;
     margin-top: 5%;
 }
