@@ -102,7 +102,8 @@ select {
 }
 
 div #botao_analisar {
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 15px;
     height: 25px;
     width: 40%;
@@ -114,4 +115,9 @@ div #botao_analisar {
     font-size: .9em;
     margin-top: 15px;
     margin-left: 8px;
+}
+
+div .texto {
+    font-size: .9em;
+    margin: 5px;
 }
