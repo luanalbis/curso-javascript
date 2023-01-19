@@ -2,7 +2,7 @@ function calcPasso(){
      var inicio = Number(document.getElementById('idinicio').value)
      var fim = Number(document.getElementById('idfim').value)
      var passo = Number(document.getElementById('idpasso').value)
-     
+     document.getElementById("contagem").innerHTML = ' '
      if (inicio < fim && passo <= fim && passo > 0  && fim >= inicio + passo){
 
           for (inicio;inicio <= fim;inicio += passo){

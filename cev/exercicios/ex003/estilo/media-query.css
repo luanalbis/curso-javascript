@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@media screen and (min-width:800px) {
+    header {
+        font-size: 1em;
+    }
+
+    main {
+        font-size: 1em;
+    }
+
+    input#idano {
+        font-size: 0.7em;
+        height: 25px;
+    }
+}
