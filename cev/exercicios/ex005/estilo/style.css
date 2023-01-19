@@ -71,7 +71,7 @@ input.botao {
 }
 
 input.botao:hover {
-    background-color: rgb(241, 231, 231);
+    background-color: rgb(230, 206, 206);
     transition: background-color .2s;
 }
 
@@ -82,7 +82,7 @@ input#botao_remover {
 }
 
 input#botao_remover:hover{
-    background-color:rgb(116, 23, 202);
+    background-color:rgb(135, 27, 236);
     transition: .3s;
 }
 
