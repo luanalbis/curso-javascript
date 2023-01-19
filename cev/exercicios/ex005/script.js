@@ -54,7 +54,6 @@ function remover() {
     }
 }
 
-
 function analisar() {
     
     if (lista_numeros.length > 0) {
