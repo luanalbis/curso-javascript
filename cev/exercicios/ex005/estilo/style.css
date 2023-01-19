@@ -96,8 +96,7 @@ div#iditens{
 select {
     display: block;
     width: 40%;
-    margin-left: 15px;
-    margin-top: 10px;
+    margin-left: 15px;;
     text-align: center;
     
 }

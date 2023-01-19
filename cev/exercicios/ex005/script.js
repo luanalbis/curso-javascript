@@ -32,3 +32,17 @@ function remover() {
     }
 
 }
+
+function analisar() {
+    if (lista_numeros.length > 0) {
+        var p = document.createElement('p')
+        p.innerHTML = `${lista_numeros.length} número(s) cadastrado(s)`
+        document.getElementById("iditens").appendChild(p)
+
+        var p = document.createElement('p')
+        p.innerHTML = `${lista_numeros.some()} cadastrados`
+        document.getElementById("iditens").appendChild(p)
+        
+
+    }
+}
