@@ -67,6 +67,7 @@ input.botao {
     color: black;
     font-weight: bold;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 input.botao:hover {
@@ -97,6 +98,7 @@ select {
     width: 40%;
     margin-left: 15px;
     margin-top: 10px;
+    text-align: center;
     
 }
 
@@ -107,4 +109,10 @@ div #botao_analisar {
     width: 40%;
     display: inline;
     border-radius: 0px;
+}
+
+#adicionado{
+    font-size: .9em;
+    margin-top: 15px;
+    margin-left: 8px;
 }
