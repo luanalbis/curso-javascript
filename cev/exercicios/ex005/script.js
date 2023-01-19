@@ -6,7 +6,7 @@ var lista_numeros = []
 //3 Criei um elemento option com ID referente ao numero dele, para diferenciar os numeros
 //4 Adicionei um texto ao option, o texto é o numero do input
 //5 Adicionei os option com o appendChild ao elemento Select através do seu ID
-//6 Condições caso o número já esteja na lista ou fora dos valores permitidoss
+//6 Condições caso o número já esteja na lista ou fora dos valores permitidos
 
 function adicionar(){
  
