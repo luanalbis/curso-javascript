@@ -1,4 +1,5 @@
 var lista_numeros = []
+var lista_numeros = []
 document.querySelectorAll('.texto').innerHTML = ''
 
 function adicionar(){
@@ -41,29 +42,22 @@ function analisar() {
     
     if (lista_numeros.length > 0) {
         var soma = 0
-        var maior = 0
-        var menor = 0
+        var maior = lista_numeros[0]
+        var menor = lista_numeros[0]
+
+        for (var c in lista_numeros){
+            soma += lista_numeros[c]
+            if (lista_numeros[c] > maior){
+                maior = lista_numeros[c]
+            } else if (lista_numeros[c] < menor){
+                menor = lista_numeros[c]
+            }
+        }
 
         var p = document.createElement('p')
         p.setAttribute('class','texto')
         p.innerHTML = `Número(s) cadastrado(s): ${lista_numeros.length}`
         document.getElementById("iditens").appendChild(p)
-
-        for (var c in lista_numeros){
-            soma += lista_numeros[c]
-            if (c == 0){
-                maior = lista_numeros[c]
-                menor = lista_numeros[c]
-            } else {
-
-                if (lista_numeros[c] > maior){
-                    maior = lista_numeros[c]
-                } else if (lista_numeros[c] < menor){
-                    menor = lista_numeros[c]
-
-                }
-            }
-        }
 
         var p = document.createElement('p')
         p.setAttribute('class','texto')
@@ -79,6 +73,7 @@ function analisar() {
         p.setAttribute('class','texto')
         p.innerHTML = `Menor e Maior número: ${menor} e ${maior} `
         document.getElementById("iditens").appendChild(p)
+        
     } else {
         window.alert('Sem números para analisar')
     }
