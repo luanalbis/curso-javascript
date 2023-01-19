@@ -1,13 +1,5 @@
 var lista_numeros = []
 
-//1 Primeiro capturei o valor do input para a variavel numero
-//2 Verifiquei se o número estava presente na lista e se atendia as condições
-//2 Se o número não estiver na lista, será adicionado na mesma
-//3 Criei um elemento option com ID referente ao numero dele, para diferenciar os numeros
-//4 Adicionei um texto ao option, o texto é o numero do input
-//5 Adicionei os option com o appendChild ao elemento Select através do seu ID
-//6 Condições caso o número já esteja na lista ou fora dos valores permitidos
-
 function adicionar(){
  
     var numero = Number(document.getElementById('idnum').value)
@@ -26,15 +18,6 @@ function adicionar(){
         window.alert('Número fora do valor permitido!')
     }
 }
-
-//7 Primeiro capturei o valor do input para a variavel numero
-//8 Verifiquei se o número estava presente na lista e se atendia as condições
-//8 A condição valerá se o número estiver na lista
-//9 criei uma variável pai, que recebe um elemento por id
-//10 criei uma variável filho, que recebe um elemento option pelo ID
-//10 No caso, o ID do elemento option será seu número, pois cada um é único
-//11 usei pai.removChild(filho), para remover o elemento option
-//12 Condições caso a condição seja negada
 
 function remover() {
     var numero = Number(document.getElementById('idnum').value)
