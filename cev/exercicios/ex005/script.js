@@ -70,7 +70,7 @@ function analisar() {
             }
         }
 
-        document.getElementById('iditens').innerHTML = ''
+        document.getElementById('iditens').innerHTML = ' '
         document.getElementById("iditens").innerHTML += ` <p class="texto">Número(s) cadastrado(s): ${lista_numeros.length}</p> `
         document.getElementById("iditens").innerHTML += `<p class="texto">Soma total dos numeros:${soma}</p>`
         document.getElementById("iditens").innerHTML += `<p class="texto">Média dos números : ${(soma/lista_numeros.length).toFixed(1)}</p>`
