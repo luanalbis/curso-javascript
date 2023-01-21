@@ -1,4 +1,10 @@
 // operadores bitwise
+'use strict'
+let cruso = true
+while (cruso) {
+    console.log ('oi Luan')
+    cruso = false
+}
 
 let n1 = 25
 let n2 = 10
@@ -41,3 +47,6 @@ let colecao2 = [...document.getElementsByTagName('div')]
 console.log(colecao2) // Transforma o document em um array
 
 //  ATENÇÃO, se definirmos um  ARRAY1 = ARRAY2, criamos um vinculo entre o dois arrays, modificando 1, o outro será modificado também
+
+
+
