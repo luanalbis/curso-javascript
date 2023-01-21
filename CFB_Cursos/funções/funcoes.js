@@ -23,3 +23,5 @@ console.log(funcao(34,343))
 const construtoras = new Function("v1","v2","return v1*v2")
 
 console.log(construtoras(10,10))
+
+// ARROW FUNCTIONS ou FUNÇÕES LAMBAS
