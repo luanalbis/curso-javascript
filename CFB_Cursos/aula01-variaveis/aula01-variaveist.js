@@ -8,6 +8,6 @@ console.log(nome)
 
 const curso = 'curso' //Váriavel que não é possível mudar o valor
 
-console.log (curso)
+console.log(curso)
 
 // podemos adicionar varias variaveis no mesmo LET, VAR ou CONST, separando por virgula e dando seu valor ---- exemplo ---- LET nome = 0,curso = 'curso
