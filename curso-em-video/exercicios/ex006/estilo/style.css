@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+@charset "utf-8"; 
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ body,html {
+    background-color: rgb(102, 19, 180);;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ header { 
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.637);
+    margin-bottom: 10px;
+    font-size :2.9vw;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+main {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(70, 229, 250);
+    font-size: .8em;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.486);
+}
+
+
+label {
+    font-weight: bolder;
+}
+
+
+input {
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    border: solid 1px rgb(91, 16, 161);
+    border-radius: 5px;
+}
+
+
+input.botao {
+    margin: auto;
+    display: inline;
+    font-size: 1em;
+    width: px;
+    height: 40px;
+    margin-bottom: 2%;
+    background-color: rgb(243, 242, 242);
+    border: 1px solid;
+    color: black;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input.botao:hover {
+    background-color: rgb(230, 206, 206);
+    transition: background-color .2s;
+}
+
+input#botao_remover {
+    color: white;
+    background-color:rgb(102, 27, 172);
+    
+}
+
+input#botao_remover:hover{
+    background-color:rgb(135, 27, 236);
+    transition: .3s;
+}
+
+div{
+    margin-top: 10px;
+    padding: 2px 0px 5px 5px;
+    font-weight: bold;
+    
+
+}
+select {
+    display: block;
+    padding: 3px 0;
+    width: 40%;
+    margin-left: 15px;
+    margin-top: 15px;;
+    text-align: center;
+    
+}
+
+main #botao_analisar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    height: 25px;
+    width: 40%;
+    display: inline;
+    border-radius: 0px;
+}
+
+#adicionado{
+    font-size: .9em;
+    margin-top: 15px;
+    margin-left: 8px;
+}
+
+div#iditens {
+    margin-top: 0;
+}
+
+div .texto {
+    font-size: 1em;
+    margin: 5px;
+}
+
