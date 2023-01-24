@@ -28,10 +28,7 @@ console.log(num3) // aqui era pra dar 1, mas repare que o valor foi 0.9999999999
 num3 = parseFloat(num3.toFixed(2))
 console.log(num3)
 
-// podemos resolver isto desta forma tambem
+// podemos resolver isto desta forma tambemm
 
 let resolvemos = ((0.7*100)+(0.1*100)) / 100
 console.log(resolvemos)
-
-
-
