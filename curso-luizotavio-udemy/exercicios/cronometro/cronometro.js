@@ -13,7 +13,6 @@ function zerar () {
 }
 
 timer = setInterval(() => {
-    iniciar()
 },100)
 
 setTimeout(() => {
