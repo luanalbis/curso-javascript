@@ -68,6 +68,7 @@ while (i < 3){
         }
     } catch(e){
         i++ // fazemos o incremento para dar 3 chances ao usuário
+        continue
     } finally {
         console.log('Finalizando \n') //usando isso nosso software não será interrompido
     }
