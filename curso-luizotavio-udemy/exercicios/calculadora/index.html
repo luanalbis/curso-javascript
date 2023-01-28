@@ -10,9 +10,9 @@
 <body>
     <main>
         <h1>Calculadora</h1>
-        <p id="resultado"> </p>
+        <p id="resultado">0 </p>
         <div>
-            <input class="clearEParenteses" type="button" value="C">
+            <input onclick="limparNumeros()" class="clearEParenteses" type="button" value="C">
             <input class="clearEParenteses"  type="button" value="(">
             <input class="clearEParenteses"  type="button" value=")">
             <input class="acoesDaCalculadora" type="button" value="/">
@@ -36,11 +36,11 @@
             <input onclick="escolhaNumero(1)" class="numeroEVirgulas"  type="button" value="1">
             <input onclick="escolhaNumero(2)" class="numeroEVirgulas"  type="button" value="2">
             <input onclick="escolhaNumero(3)" class="numeroEVirgulas"  type="button" value="3">
-            <input onclick="escolhaNumero(0)" class="acoesDaCalculadora" type="button" value="+">
+            <input class="acoesDaCalculadora" type="button" value="+">
         </div>
 
         <div>
-            <input class="numeroEVirgulas"  id="tamanhoMaior" type="button" value="0">
+            <input onclick="escolhaNumero(0)" class="numeroEVirgulas"  id="tamanhoMaior" type="button" value="0">
             <input class="numeroEVirgulas"  type="button" value=",">
             <input class="acoesDaCalculadora" type="button" value="=">
         </div>

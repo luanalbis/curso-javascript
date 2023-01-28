@@ -1,7 +1,12 @@
-res = document.getElementById('resultado').innerHTML
+let resultado = document.getElementById('resultado')
 function escolhaNumero(a) {
-    res += a
-    
-    
-    
+    if (resultado.innerHTML == 0) resultado.innerHTML = a 
+    else resultado.innerHTML += a 
 }
+
+function limparNumeros(){
+    resultado.innerHTML = 0
+}
+
+let soma = '8 + 2'
+console.log(soma)
