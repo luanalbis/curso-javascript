@@ -8,5 +8,14 @@ function limparNumeros(){
     resultado.innerHTML = 0
 }
 
-let soma = '8 + 2'
-console.log(soma)
+function apagarNumero() {
+    resultado.innerHTML = resultado.innerHTML.slice(0,-1)
+}
+
+function realizaConta(){
+    try {
+        resultado.innerHTML = eval(resultado.innerHTML) 
+    } catch(e) {
+        alert('Formato inválido')
+    }
+}
