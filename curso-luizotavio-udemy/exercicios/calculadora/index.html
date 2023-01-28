@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <h1>Calculadora</h1>
+        <p id="resultado"> </p>
+        <div>
+            <input class="clearEParenteses" type="button" value="C">
+            <input class="clearEParenteses"  type="button" value="(">
+            <input class="clearEParenteses"  type="button" value=")">
+            <input class="acoesDaCalculadora" type="button" value="/">
+        </div>
+
+        <div>
+            <input onclick="escolhaNumero(7)" class="numeroEVirgulas" type="button" value="7">
+            <input onclick="escolhaNumero(8)" class="numeroEVirgulas" type="button" value="8">
+            <input onclick="escolhaNumero(9)" class="numeroEVirgulas"  type="button" value="9">
+            <input class="acoesDaCalculadora" type="button" value="X">
+        </div>
+
+        <div>
+            <input onclick="escolhaNumero(4)" class="numeroEVirgulas"  type="button" value="4">
+            <input onclick="escolhaNumero(5)" class="numeroEVirgulas"  type="button" value="5">
+            <input onclick="escolhaNumero(6)" class="numeroEVirgulas"  type="button" value="6">
+            <input class="acoesDaCalculadora" type="button" value= "-">
+        </div>
+
+        <div>
+            <input onclick="escolhaNumero(1)" class="numeroEVirgulas"  type="button" value="1">
+            <input onclick="escolhaNumero(2)" class="numeroEVirgulas"  type="button" value="2">
+            <input onclick="escolhaNumero(3)" class="numeroEVirgulas"  type="button" value="3">
+            <input onclick="escolhaNumero(0)" class="acoesDaCalculadora" type="button" value="+">
+        </div>
+
+        <div>
+            <input class="numeroEVirgulas"  id="tamanhoMaior" type="button" value="0">
+            <input class="numeroEVirgulas"  type="button" value=",">
+            <input class="acoesDaCalculadora" type="button" value="=">
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>

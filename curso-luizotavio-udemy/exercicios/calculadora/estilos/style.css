@@ -4,3 +4,77 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: rgb(0, 0, 0);
+    width: 100vw; height: 100vh;
+    display: flex;
+    align-items: center; justify-content: center;
+}
+main{
+    
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 20px;
+}
+main p {
+    background-color: rgba(255, 255, 255, 0.123);
+    height: 50px;
+    border-radius: 100px;
+    width: 96%;
+    margin-left: 4px;
+}
+
+main h1 {
+    color: rgb(255, 168, 5);
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+div {
+    margin: 5px;
+}
+
+div input {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    border: none;
+    margin:2px;
+}
+
+div > input.clearEParenteses{
+    background-color: rgba(255, 255, 255, 0.774);
+}
+
+div > input.acoesDaCalculadora{
+    background-color: rgb(255, 153, 0);
+}
+
+div > input#tamanhoMaior{
+    width: 128px;
+}
+
+div > input.numeroEVirgulas{
+    color: white;
+    background-color: rgba(255, 252, 252, 0.089);
+}
+
+/* HOVERS */
+
+div > input.clearEParenteses:hover{
+    background-color: rgba(255, 255, 255, 0.925);
+    transition: 0.2s;
+}
+
+div > input.acoesDaCalculadora:hover{
+    background-color: rgb(231, 176, 57);
+    transition: .2s;
+}
+
+div > input.numeroEVirgulas:hover{
+    background-color: rgba(255, 252, 252, 0.308);
+    transition: .2s;
+}
