@@ -7,4 +7,4 @@ function recursiva (max) { // definimos o parametro max
     recursiva(max)         // a função se chama novamente, mas agora com o valor de max atualizado
 }
 
-recursiva(0)
+recursiva(0) // função primária sendo chamada
