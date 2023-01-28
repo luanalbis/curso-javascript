@@ -1,4 +1,4 @@
-// Funções que fogem do padrão, podendo mostrar valores diferentes a cada vez que chamarmos 
+// Funções que fogem do padrão, podendo mostrar valores diferentes a cada vez que chamarmos
 
 function* geradora() {
     //codigo
