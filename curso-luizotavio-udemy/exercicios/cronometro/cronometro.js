@@ -21,25 +21,20 @@ function iniciar (){
     if (c == 0){
         timer = setInterval(() => {tempo()} ,10)
         document.getElementById('cronometro').style.color = "black" 
-    }c++
+        document.getElementById('iniciar').value = 'Parar'
+        document.getElementById('iniciar').id = 'parar'
+        c++
+        
+    } else {
+        setTimeout(() => { clearInterval(timer) },0)
+        document.getElementById('parar').value='Iniciar'
+        document.getElementById('parar').id = 'iniciar'
+        document.getElementById('cronometro').style.color = "rgb(238, 11, 11)"
+        c=0
+    }
 } 
-
-function parar () {
-    setTimeout(() => {
-        clearInterval(timer)
-    },0)
-    document.getElementById('cronometro').style.color = "rgb(238, 11, 11)"
-    c = 0
-}
 
 function zerar () {
     document.getElementById('cronometro').innerHTML = '00:00:00'
     milisegundo = 0,  segundo = 0, minuto = 0
 }
-
-
-
-
-
-
-

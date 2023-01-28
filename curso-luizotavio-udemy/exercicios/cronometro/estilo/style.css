@@ -8,7 +8,7 @@
 body {
     display: flex; 
     justify-content: center; align-items: center;
-    background-color: rgba(238, 11, 208, 0.342);
+    background-color: rgba(0, 0, 0, 0.938);
     width: 100vw; height: 100vh;
     font-family: sans-serif;
 }
@@ -49,21 +49,21 @@ input {
 
 div #iniciar:hover{
     cursor: pointer;
-    border-color: rgb(0, 255, 85);
+    border-color: rgb(30, 255, 0);
     background-color: rgba(236, 234, 234, 0.637);
     
 }
 
 div #parar:hover{
     cursor: pointer;
-    border-color: rgb(251, 255, 0);
+    border-color:  rgb(255, 0, 0);
     background-color: rgba(236, 234, 234, 0.637);
     
 }
 
 div #zerar:hover{
     cursor: pointer;
-    border-color: rgb(255, 0, 0);
+    border-color: rgb(251, 255, 0);
     background-color: rgba(236, 234, 234, 0.637);
     
 }
