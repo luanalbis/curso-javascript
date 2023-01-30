@@ -3,4 +3,4 @@
 
 const numeros = [1,26,77,88,9,8,634,90,8,7,23]
 const total = numeros.reduce((acumulador,valor,indice,array) => acumulador+= valor)
-console.log(total)//
+console.log(total)
