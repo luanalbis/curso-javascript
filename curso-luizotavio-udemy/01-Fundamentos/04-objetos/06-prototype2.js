@@ -9,3 +9,5 @@ const objetoC = {objetoC: 'C'}
 Object.setPrototypeOf(objetoC,objetoB)// definimos o proto do objeto c como o objeto b
 
 console.log(Object.getPrototypeOf(objetoC))
+
+//const p3 = createObject (prototype, {chaves})
