@@ -9,11 +9,16 @@ function Produto(nome,preco,estoque){
 
     Object.defineProperty(this,'estoque',{  
         enumerable:true, 
-        configurable: true 
-        get: () =
+        configurable: true,
+        
+        //Getter
+        get:() => estoque,
+
+        //Setter
+        set:() => estoque * 2
+        
     }) 
 }
 
-const p1 = new Produto('Camisa', 25, 5)
-p1.estoque = 1000 // 
-console.log(p1)
+const p1 = new Produto('Camisa', 25, 50) 
+console.log(p1.estoque)
