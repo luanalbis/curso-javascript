@@ -5,10 +5,13 @@
 function Pessoa (nome,sobrenome) {
     this.nome = nome,
     this.sobrenome = sobrenome
-    Pessoa.prototype.nomeCompleto = () => this.nome + ' ' + this.sobrenome
 }
 
-
+Pessoa.prototype.nomeCompleto = function (){ return this.nome + ' ' + this.sobrenome} // se usar arrow function, irá ficar como undefined
 
 const p1 = new Pessoa('Luan', 'da Silva ALbis')
 console.log(p1.nomeCompleto())
+
+
+
+
