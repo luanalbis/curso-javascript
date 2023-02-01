@@ -1,4 +1,4 @@
-let cpf = document.getElementById("id-cpf").innerHTML,primeiroDigito = 0, segundoDigito = 0,contador = 0
+let cpf = '44444444444',primeiroDigito = 0, segundoDigito = 0,contador = 0
 let cpfLimpo = cpf.replace(/\D+/g,'')
 const arrayCpf = Array.from(cpfLimpo)
 const arrayParaValidar = []
@@ -35,6 +35,7 @@ for(numero in arrayCpf){
         contador=1
     }
 }
-
+console.log(arrayCpf)
+console.log(arrayParaValidar)
 if (contador > 0) console.log('CPF Inválido')
 else console.log('CPF Válido')
