@@ -1,4 +1,4 @@
-let cpf = '44444444444',primeiroDigito = 0, segundoDigito = 0,contador = 0
+let cpf = '',primeiroDigito = 0, segundoDigito = 0,contador = 0
 let cpfLimpo = cpf.replace(/\D+/g,'')
 const arrayCpf = Array.from(cpfLimpo)
 const arrayParaValidar = []
@@ -25,17 +25,10 @@ for (c = 11; c >= 2; c--){
 }
 
 segundoDigito = 11 - (segundoDigito % 11)
-if (segundoDigito > 9) segundoDigito = 0 // se primeiro digito for maior que 10, será 0
-arrayParaValidar.push(segundoDigito.toString()) // adcionando 
+if (segundoDigito > 9) segundoDigito = 0 // se  digito for maior que 10, será 0
+arrayParaValidar.push(segundoDigito.toString()) // adcionando ao final do array para validar
 
-// for para verificar se os cpfs serão validados
-contador = 0
-for(numero in arrayCpf){
-    if(arrayCpf[numero] !== arrayParaValidar[numero]){
-        contador=1
-    }
-}
-console.log(arrayCpf)
-console.log(arrayParaValidar)
-if (contador > 0) console.log('CPF Inválido')
-else console.log('CPF Válido')
+cpf = arrayCpf.join('')
+let cpfParaValidar = arrayParaValidar.join('')
+console.log(cpf == cpfParaValidar)
+
