@@ -1,5 +1,3 @@
-// VARIÁVEIS 
-
 let cpf = document.getElementById("id-cpf").innerHTML,primeiroDigito = 0, segundoDigito = 0,contador = 0
 let cpfLimpo = cpf.replace(/\D+/g,'')
 const arrayCpf = Array.from(cpfLimpo)
