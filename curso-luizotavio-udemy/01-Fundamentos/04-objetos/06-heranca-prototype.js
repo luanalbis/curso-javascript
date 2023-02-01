@@ -1,4 +1,4 @@
-//Produto
+// Produto
 // Camiseta, Caneca, Lapis
 // cada produto pode ter características específicas
 
@@ -27,8 +27,8 @@ function Caneca (nome,preco,cor,marca) {
     this.marca = marca
 }
 
-Caneca.prototype = Object.create(Produto.prototype)
-Caneca.prototype.constructor = Caneca
+Caneca.prototype = Object.create(Produto.prototype)//Caneca herda tudo do produto
+Caneca.prototype.constructor = Caneca// deninimos o construtor da caneca como ela mesma
 
 const produto = new Produto('Gen', 111 , 'preto')
 const camiseta = new Camiseta('Blusa', 50)
