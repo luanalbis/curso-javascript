@@ -12,7 +12,6 @@ function validadorDeCPF(){
             arrayParaValidar.push(arrayCpf[contador])
             contador++
         }
-    
         primeiroDigito = 11 - (primeiroDigito % 11) // calculo para pegar o primeiro digito
         if (primeiroDigito > 9) primeiroDigito = 0 // se digito for maior que 10, será = 0
         arrayParaValidar.push(primeiroDigito.toString()) // adcionando 
@@ -23,7 +22,6 @@ function validadorDeCPF(){
             segundoDigito += (Number(arrayCpf[contador]) * c)
             contador ++
         }
-
         segundoDigito = 11 - (segundoDigito % 11)
         if (segundoDigito > 9) segundoDigito = 0 // se primeiro digito for maior que 10, será 0
         arrayParaValidar.push(segundoDigito.toString()) // adcionando 
