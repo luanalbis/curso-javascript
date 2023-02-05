@@ -1,4 +1,4 @@
-const _velocidade = Symbol('velocidade')
+const _velocidade = Symbol('velocidade') // para acessar, basta colocar a variavel entre colchetes, exemplo: this[_velocidade], isso faz com que não consigamos mudar a variável
 
 class Carro {
     constructor(nome) {
