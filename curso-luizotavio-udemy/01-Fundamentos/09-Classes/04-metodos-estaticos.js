@@ -1,4 +1,4 @@
-//
+/
 class ControleRemoto {
     constructor(nome){
         this.nome = nome
