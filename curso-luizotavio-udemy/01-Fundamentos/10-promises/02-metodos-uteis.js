@@ -20,6 +20,10 @@ const promises = [
     espera('luan da silva albis',500),
 ]
 
-Promise.all(promises)
+Promise.all(promises) // resolve todos os promises do array, se uma der errado, rejeita todos
+    .then((valor) => console.log(valor))
+    .catch(erro => console.log(erro))
+
+Promise.race(promises) // corrida entre os promises e mostra o primeiro que foi resolvido
     .then((valor) => console.log(valor))
     .catch(erro => console.log(erro))
