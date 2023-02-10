@@ -1,4 +1,4 @@
-// AJAX  
+// AJAX
 
 const request = obj => {
     const xhr = new XMLHttpRequest()
