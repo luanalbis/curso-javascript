@@ -1,4 +1,4 @@
-function espera(msg, tempo){ // parâmetros
+function espera(msg, tempo =1000){ // parâmetros
     return new Promise((resolve,reject) => { //retornamos uma nova promise
         if (typeof msg !== 'string') {
             reject('Precisa ser uma frase válida') // erros irão pro reject
@@ -7,7 +7,7 @@ function espera(msg, tempo){ // parâmetros
         }
         setTimeout(() => { // aqui fazemos o set timeout que irá receber o resolve com o parametro
             resolve(msg)
-        },1000 ) // apos a função, coloque o tempo do timeout
+        },tempo ) // apos a função, coloque o tempo do timeout
     })
 }
 
@@ -25,14 +25,13 @@ espera('Oi 1')
 async function executa() {
     try {
     console.log(await espera('oi 1'))
-    console.log(await espera('oi 2'))
+    console.log(await espera('oi 2',))
     console.log(await espera('oi 3'))
 
     } catch (e) {console.log(e)}
 }
 
 executa()
-
 //pendind - pendente
 
 // fullfield - resolvida
